@@ -1,0 +1,30 @@
+Enoch Kim 16117077, CS 313 Project 2 Sudoku Solver, Spring 2019
+
+Summary 
+Design a program that solves "Simple" Sudokus.
+
+This project/program is designed to take an .csv file and parses it in through the "SudokuGrid" class. 
+It will then carry out the methods in the Sudoku Grid class and an .txt will print the final state of the grid with the Sudoku Grid being solved. 
+
+Note, I did some brainstorming with Hubert on how I was going to approach this project and solve the Sudoku Grid. I had thought and discussed about a brute algorithm with a backtracking method. 
+This was somewhat similar to a project I had done in CS 211 called 8 queens with a backtracking method, but in the end I went through a different route. 
+
+The approach I took for this project was the candidate example that was given to us in class. I created a 2D array to store my values and
+created a hashmap to store the candidate values in every cell that was allowed depending the 3 restrictions/checks. The candidate
+are stored in an ArrayList then into hashmap.  
+
+The first thing that this the "SudokuGrid" class looks for is the ',' character.
+A zero is inserted in between commas, also if the first char is a digit, it is converted into a string then into a Integer. 
+Then after the first char is checked, it cycles through a for loop and all of the placements between the commas that is to be inserted 
+into the grid. It then parses the number into the Grid which used later for determining candidates.
+
+There are 3 checks for the SudokuGrid, they are the row(Horizontal) check, the column(Vertical) check and the 3 x 3 grid.
+No same number can be in the same row, column and 3x3 and these methods I used checkHorizontalSudokuGrid, checkVerticalSudokuGrid and 
+checkBlockSudokuGrid fulfill that role. 
+
+The method fillCellGrid, initially fill all of the ArrayList with determining candidates with the 3 check methods.
+
+The method solveSudokuGrid, while its in the not complete(the complete method, as long there is a candidates to be placed),
+goes through the rows and columns and if when only one candidate can be placed, it will place the candidate into the cell.
+Then the "updated" method removes the other candidate that was not placed. It will repeat until the complete method is true.
+Lastly, when completed,  the SudokuGrid will be printed first, then written to a text file.

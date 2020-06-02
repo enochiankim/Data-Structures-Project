@@ -1,0 +1,102 @@
+Enoch Kim 16117077, CS 313 Project 1 Bank Database, Spring 2019. 
+
+Summary
+Design and implement a "simple" database system for a bank and provide an API that works with the database.
+
+This project/program is designed to take the "Input.txt" file and look for the first character on the line, Depending on the character the input will carry out a certain command/action from the database. 
+An Output.txt will keep track on every activity of the database and the LogFlie.txt will print at the final/current state of the database. 
+
+Note, Hubert and I brained stormed and shared some ideas for this project, we discuss on how to approach certain parts of the project such as how to take in the input and how clients and accounts were going to be stored. 
+
+For example, 
+
+0 1234567891 Enoch Kim, 
+
+if the first character is '0', it will create a new client by taking in the SSN number and the Client's name. Note, when the client is made, it was also create two accounts and will be added into the database. 
+
+1 10000 500.00
+
+if the first character is '1', it will take and search the account number and deposit the amount that is stated on the line, which would be 500.00 add a value will be given to the account.
+
+2 10000 100.00
+
+if the first character is '2', it will take and search the account number and withdraw the amount that is stated on the line, which is 100.00 and subtract a value from the account. 
+
+3 10000 10001 300.00
+
+if the first character is '3' it will take and search for the two account numbers and with withdraw the value from the first account that is stated and deposit the value in the second account that is stated.
+
+4 10000
+
+if the first character is '4' it will take and search for the account and the BankAdmin will close down the account.
+
+5 10000
+
+if the first character is '5' it will take and search for the account and the BankAdmin will open up the account.
+
+During class, the professor had mentioned using a integer instead of letter commands in order for the database to carry out a command. 
+I decided a integer value would make more sense than the letters one because integer is well organized while letters can get/be confusing. 
+
+The class/interface I used for this project were called,
+
+1. Account
+
+The Account class, implements the interface of the Account. 
+Changes to an account can be made in this class such as, depositing, withdrawing,
+getting the value, checking the account status and getting the account number.
+
+2. AccountInterface
+
+Contains methods to where it allows the Account class implement it.
+
+3. BankAdmin
+
+The purpose of the BankAdmin class is that, the Bank Admin has powers that clients cannot do such as closing and opening accounts, modifying values in the account etc by implementing the interface of BankAdmin. I used the close
+account, open account and creating a cilentList and accountList in order to showcase the power of the BankAdmin.
+
+4. BankAdminInterface
+
+Contains methods to where it allows the BankAdmin class implement it.
+
+5. FlieOutput
+
+Retrieved this code from https://repl.it/@Enkim2018/File-Writer-Demo, the instructor provided the code for this class.
+This FileOutput class, has two .txt for this project. the first one is the outputs.txt and the second one is the Log.txt.
+The output.txt file provides a text file which contains of list of each and every performed. The Log file is where it states the final state 
+of the accounts, such as the amount left in the checking, how much was paid for the credit bill and the clients name and ssn. 
+
+6. TextFlieInput
+
+This Code/Class was provided in our CS 212 during the fall 2018 semester. I received permission from the instructor to use this file.
+This code allows us to take in a text file by inputting the text and read it line by line. 
+
+7. Client
+
+The Client class is the where the client SSN, name is created, The Client constructor also creates a two accounts which is the checking and credit which from the Account class and which implements the AccountInterface.
+During the brainstorming of this project, it logically made sense to have both accounts being made because when a client opens up account, they get both a checking and credit. 
+This class also has methods that a normal client can do with their bank accounts such as transfer value, deposit value and withdraw value.
+I also used the a method "addAccount" and stored the account numbers through an HashMap, the reason why I did this is because this allows me to link both the Client 
+and the account numbers together so when needed to carry out a certain action in the database, such as finding a client based off of the account number, I would have the info. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+Create client name Enoch Kim
+Create client name John Smith
+Create client name Shira Rubin
+ERROR!!!! SSN already exists!!!!
+Checking Account Number 10000 deposited $500.0
+Checking Account Number 10002 deposited $1000.0
+Checking Account Number 10000 withdrew $100.0
+Checking Account Number 10002 withdrew $250.0
+Account User paid credit bill for the amount of $300.0 from account 10000 to 10001
+Account User paid credit bill for the amount of $400.0 from account 10002 to 10003
+Bank Administration closed account number 10000 Successfully. 
+Bank Administration closed account number 10003 Successfully. 
+Bank Administration closed account number 10005 Successfully. 
+Bank Administration opened account number 10000 Successfully. 

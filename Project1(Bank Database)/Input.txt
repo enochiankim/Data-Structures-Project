@@ -1,0 +1,75 @@
+// Created accounts with SSN and Name, includes attempting to make an account with the same ssn and name.
+
+0 1234567891 Enoch Kim
+0 1122334455 John Smith
+0 2143658792 Shira Rubin
+0 1234567891 Enoch Kim
+
+// Bank Account Deposit amounts
+
+1 10000 500.00
+1 10002 1000.00
+
+// Bank Account Withdrawal amounts
+
+2 10000 100.00
+2 10002 250.00
+
+// Paying Credit bill from Checking account
+
+3 10000 10001 300.00
+3 10002 10003 400.00
+
+// Bank Admin Closing Accounts
+
+4 10000
+4 10003
+4 10005
+
+// Bank Admin Opening Accounts
+
+5 10000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

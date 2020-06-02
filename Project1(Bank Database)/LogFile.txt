@@ -1,0 +1,21 @@
+Client: [John, Smith]
+Checking account number: 10002
+Balance: $350.0. 
+Status of the account: Open 
+Credit account number: 10003
+Balance Paid: $400.0. 
+Status of the account: Closed 
+Client: [Enoch, Kim]
+Checking account number: 10000
+Balance: $100.0. 
+Status of the account: Open 
+Credit account number: 10001
+Balance Paid: $300.0. 
+Status of the account: Open 
+Client: [Shira, Rubin]
+Checking account number: 10004
+Balance: $0.0. 
+Status of the account: Open 
+Credit account number: 10005
+Balance Paid: $0.0. 
+Status of the account: Closed 
